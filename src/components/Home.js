@@ -5,7 +5,8 @@ export default class Home extends Component {
     render() {
         return (
             <div className="Home">
-                <h1>HOME</h1>
+                <br></br>
+                <h1>Home</h1>
                 <p><b>Hi, I'm Tom!</b></p>
                 <p>
                     I'm currently a software developer at CGI, working in the defence sector. 

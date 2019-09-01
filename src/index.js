@@ -1,12 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
-import { Route, Link, HashRouter as Router, Switch } from 'react-router-dom'
+import { Route, HashRouter as Router, Switch } from 'react-router-dom'
 import Projects from './components/Projects';
+import PageNotFound from './components/PageNotFound';
+
 import * as serviceWorker from './serviceWorker';
 
 import './index.css';
-import PageNotFound from './components/PageNotFound';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 
 const routing = (
     <Router>
