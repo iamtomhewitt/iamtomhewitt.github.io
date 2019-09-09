@@ -1,7 +1,8 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
-import { Navbar } from "react-bootstrap";
 import Routes from "./Routes";
+import { Link } from "react-router-dom";
+import { Nav, Navbar, NavItem } from "react-bootstrap";
+import { LinkContainer } from "react-router-bootstrap";
 
 import "./App.css";
 
@@ -16,6 +17,16 @@ class App extends Component {
             </Navbar.Brand>
             <Navbar.Toggle />
           </Navbar.Header>
+          <Navbar.Collapse>
+            <Nav pullRight>
+              <LinkContainer to="/experience">
+                <NavItem>Experience</NavItem>
+              </LinkContainer>
+              <LinkContainer to="/projects">
+                <NavItem>Projects</NavItem>
+              </LinkContainer>
+            </Nav>
+          </Navbar.Collapse>
         </Navbar>
         <Routes />
       </div>
