@@ -40,7 +40,7 @@ export default class Projects extends Component {
                 <div className="Projects">
                     <h1>Projects</h1>
                     <br></br>
-                    <table>
+                    <table id="repos-table">
                         <thead>
                             <tr>
                                 <td><b>Repo</b></td>
@@ -49,13 +49,13 @@ export default class Projects extends Component {
                             </tr>
                         </thead>
                         <tbody>
-                        {this.state.repos.map(repo => (
-                            <tr>
-                                <td>{repo.name}</td>
-                                <td>{repo.description}</td>
-                                <td><a href={repo.url}>{repo.url}</a></td>
-                            </tr>
-                        ))}</tbody>
+                            {this.state.repos.map(repo => (
+                                <tr>
+                                    <td style={{ width: '20%' }}><i>{repo.name}</i></td>
+                                    <td style={{ width: '70%' }}>{repo.description}</td>
+                                    <td style={{ width: '10%' }}><a href={repo.url}>{repo.url}</a></td>
+                                </tr>
+                            ))}</tbody>
                     </table>
                 </div>
             );
