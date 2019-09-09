@@ -25,6 +25,9 @@ class App extends Component {
               <LinkContainer to="/projects">
                 <NavItem>Projects</NavItem>
               </LinkContainer>
+              <LinkContainer to="/contact">
+                <NavItem>Contact</NavItem>
+              </LinkContainer>
             </Nav>
           </Navbar.Collapse>
         </Navbar>
