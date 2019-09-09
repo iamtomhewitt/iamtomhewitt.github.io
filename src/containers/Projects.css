@@ -1,0 +1,14 @@
+.Projects {
+    padding: 80px 0;
+    text-align: center;
+  }
+  
+  .Projects h1 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+  }
+  
+  .Projects p {
+    color: #999;
+  }
+  

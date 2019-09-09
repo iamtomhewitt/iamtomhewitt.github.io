@@ -6,6 +6,7 @@ export default class Experience extends Component {
         return (
             <div className="Experience">
                 <h1>Experience</h1>
+                <p>List of my experience like LinkedIn. Perhaps there is a LinkedIn api that I could use?</p>
             </div>
         );
     }
