@@ -39,11 +39,24 @@ export default class Projects extends Component {
             return (
                 <div className="Projects">
                     <h1>Projects</h1>
-                    <ul>
+                    <br></br>
+                    <table>
+                        <thead>
+                            <tr>
+                                <td><b>Repo</b></td>
+                                <td><b>Description</b></td>
+                                <td><b>URL</b></td>
+                            </tr>
+                        </thead>
+                        <tbody>
                         {this.state.repos.map(repo => (
-                            <li key={repo.name}>{repo.name + " | " + repo.description} </li>
-                        ))}
-                    </ul>
+                            <tr>
+                                <td>{repo.name}</td>
+                                <td>{repo.description}</td>
+                                <td><a href={repo.url}>{repo.url}</a></td>
+                            </tr>
+                        ))}</tbody>
+                    </table>
                 </div>
             );
         }
