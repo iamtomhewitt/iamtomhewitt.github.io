@@ -6,52 +6,54 @@ export default class Projects extends Component {
     constructor() {
         super();
         this.state = {
-            repos: null
+            repos: []
         };
     }
+
     componentDidMount() {
-        var repos = []
-        var request = new XMLHttpRequest()
+        const that = this;
+        fetch("https://api.github.com/users/iamtomhewitt/repos")
+            .then(function (response) {
+                return response.json();
+            })
+            .then(function (jsonData) {
+                var fetched_repos = []
+                var data = jsonData
 
-        request.open('GET', 'https://api.github.com/users/iamtomhewitt/repos', true)
-        request.onload = function () {
-            var data = JSON.parse(this.response)
-
-            var name = '';
-            var repo_url = '';
-            var repo_description = '';
-
-            for (const [key, value] of Object.entries(data)) {
-                name = value['name']
-                repo_url = value['html_url']
-                repo_description = value['description']
-
-                repos.push(
-                    {
-                        repo_name: name,
-                        url: repo_url,
-                        description: repo_description
-                    }
-                )
-            }
-        }
-
-        this.setState({
-            repos: repos
-        });
-
-        request.send()
+                for (var i = 0; i < data.length; i++) {
+                    var repo = data[i];
+                    fetched_repos.push(
+                        {
+                            name: repo.name,
+                            url: repo.html_url,
+                            description: repo.description
+                        }
+                    )
+                }
+                that.setState({ repos: fetched_repos });
+            });
     }
 
     render() {
-        console.log(this.state.repos);
-
-        return (
-            
-            <div className="Projects">
-                <h1>Projects</h1>
-                <p>This is where a table of my projects live. This could be manual, or an API request to my github listing all of my projects in a table.</p>
-            </div>
-        );
+        if (this.state.repos.length > 0) {
+            return (
+                <div className="Projects">
+                    <h1>Projects</h1>
+                    <ul>
+                        {this.state.repos.map(repo => (
+                            <li key={repo.name}>{repo.name + " | " + repo.description} </li>
+                        ))}
+                    </ul>
+                </div>
+            );
+        }
+        else {
+            return (
+                <div className="Projects">
+                    <h1>Projects</h1>
+                    <p>Nothing loaded!</p>
+                </div>
+            );
+        }
     }
 }
