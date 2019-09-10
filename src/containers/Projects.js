@@ -17,6 +17,7 @@ export default class Projects extends Component {
                 return response.json();
             })
             .then(function (jsonData) {
+                console.log(jsonData)
                 var fetched_repos = []
                 var data = jsonData
 
@@ -26,7 +27,8 @@ export default class Projects extends Component {
                         {
                             name: repo.name,
                             url: repo.html_url,
-                            description: repo.description
+                            description: repo.description,
+                            language: repo.language
                         }
                     )
                 }
@@ -46,14 +48,16 @@ export default class Projects extends Component {
                                 <td><b>Repo</b></td>
                                 <td><b>Description</b></td>
                                 <td><b>URL</b></td>
+                                <td><b>Main Language</b></td>
                             </tr>
                         </thead>
                         <tbody>
                             {this.state.repos.map(repo => (
-                                <tr>
+                                <tr key={repo.name}>
                                     <td style={{ width: '20%' }}><i>{repo.name}</i></td>
-                                    <td style={{ width: '70%' }}>{repo.description}</td>
+                                    <td style={{ width: '65%' }}>{repo.description}</td>
                                     <td style={{ width: '10%' }}><a href={repo.url}>{repo.url}</a></td>
+                                    <td style={{ width: '5%' }}>{repo.language}</td>
                                 </tr>
                             ))}</tbody>
                     </table>
