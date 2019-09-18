@@ -2,41 +2,13 @@
   padding: 10px 0;
   text-align: center;
   font-size: 13.5px;
-  }
-  
-  .Experience h1 {
-    font-family: "Open Sans", sans-serif;
-    font-weight: 600;
-  }
-  
-  .Experience p {
-    color: #999;
-  }
-  
-  #experience-table {
-    text-align: center;
-    border-collapse: collapse;
-    border: 3px solid #ddd;
-    width: 100%;
-  }
-  
-  #experience-table td, #experience-table th {
-    border: 1px solid #ddd;
-    padding: 8px;
-  }
-  
-  #experience-table tr:nth-child(even) {
-    background-color: #f2f2f2;
-  }
-  
-  #experience-table thead {
-    padding-top: 12px;
-    padding-bottom: 12px;
-    text-align: center;
-    background-color: #39c459;
-    color: white;
-  }
-  
-  #experience-table thead .repo {
-    width: 200px;
-  }
+}
+
+.Experience h1 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+}
+
+.Experience p {
+  color: #999;
+}

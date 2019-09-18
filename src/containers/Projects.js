@@ -2,6 +2,9 @@ import React, { Component } from "react";
 import "./Projects.css";
 
 export default class Projects extends Component {
+    // TODO
+    // Get something like this working: https://www.w3schools.com/howto/howto_css_image_overlay_zoom.asp
+    // or like this https://www.w3schools.com/howto/howto_css_team.asp
 
     constructor() {
         super();
