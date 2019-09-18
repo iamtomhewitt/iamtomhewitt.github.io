@@ -12,3 +12,14 @@
 .Experience p {
   color: #999;
 }
+
+.vertical-timeline-element-title {
+  font-family: "Open Sans", sans-serif;
+}
+
+.vertical-timeline-element-subtitle {
+  font-family: "Open Sans", sans-serif;
+}
+.vertical-timeline-element-title h1 {
+  font-family: "Open Sans", sans-serif;
+}
