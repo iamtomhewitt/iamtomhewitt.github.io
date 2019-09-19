@@ -6,8 +6,6 @@ import Experience from "./containers/Experience";
 import Projects from "./containers/Projects";
 import Contact from "./containers/Contact";
 import PrivacyPolicyVRPacmac from "./containers/PrivacyPolicyVRPacmac";
-import ImageOverlayZoomer from "./containers/ImageOverlayZoomer";
-
 
 export default () =>
   <Switch>
@@ -15,9 +13,8 @@ export default () =>
     <Route path="/experience" exact component={Experience} />
     <Route path="/projects" exact component={Projects} />
     <Route path="/contact" exact component={Contact} />
-    <Route path="/test" exact component={ImageOverlayZoomer} />
-
     <Route path="/vr-pac-mac-privacy-policy" exact component={PrivacyPolicyVRPacmac} />
+
     { /* Catch all unmatched routes */}
     <Route component={PageNotFound} />
   </Switch>;
