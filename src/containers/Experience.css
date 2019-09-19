@@ -1,12 +1,12 @@
 .Experience {
   padding: 10px 0;
-  text-align: center;
   font-size: 13.5px;
 }
 
 .Experience h1 {
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
+  text-align: center;
 }
 
 .Experience p {
