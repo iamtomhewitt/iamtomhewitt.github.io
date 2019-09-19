@@ -1,10 +1,8 @@
 import React, { Component } from "react";
 import "./Projects.css";
+import { Tile } from "./GithubTile";
 
 export default class Projects extends Component {
-    // TODO
-    // Get something like this working: https://www.w3schools.com/howto/howto_css_image_overlay_zoom.asp
-    // or like this https://www.w3schools.com/howto/howto_css_team.asp
 
     constructor() {
         super();
@@ -43,7 +41,19 @@ export default class Projects extends Component {
         if (this.state.repos.length > 0) {
             return (
                 <div className="Projects">
-                    <h1>Projects</h1>
+                    <div className="centered">
+                        <Tile {...this.state.repos[0]} />
+                        <Tile {...this.state.repos[1]} />
+                        <Tile {...this.state.repos[2]} />
+                    </div>
+
+                    <div className="centered">
+                        <Tile {...this.state.repos[3]} />
+                        <Tile {...this.state.repos[4]} />
+                        <Tile {...this.state.repos[5]} />
+                    </div>
+
+                    {/* <h1>Projects</h1>
                     <br></br>
                     <table id="repos-table">
                         <thead>
@@ -63,7 +73,7 @@ export default class Projects extends Component {
                                     <td style={{ width: '5%' }}>{repo.language}</td>
                                 </tr>
                             ))}</tbody>
-                    </table>
+                    </table> */}
                 </div>
             );
         }
