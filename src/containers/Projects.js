@@ -71,7 +71,7 @@ export default class Projects extends Component {
             return (
                 <div className="Projects">
                     <h1>Projects</h1>
-                    <p>Nothing loaded!</p>
+                    <p>No repos found :-(</p>
                 </div>
             );
         }
