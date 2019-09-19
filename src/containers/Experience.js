@@ -25,18 +25,46 @@ export default class Experience extends Component {
                             <h3 className="vertical-timeline-element-title">Developer</h3>
                             <h4 className="vertical-timeline-element-subtitle">William Hill</h4>
                             <p>
-                                Doing some codingDoing some codingDoing some codingDoing some codingDoing some codingDoing some codingDoing some codingDoing some codingDoing some codingDoing some codingDoing some codingDoing some codingDoing some codingDoing some codingDoing some codingDoing some codingDoing some codingDoing some codingDoing some codingDoing some coding
+                                Working in the Retail Tech department, on a Retail Operational Excellence project. Currently working on betting terminal fixes and in house dashboards for other projects.
                             </p>
                         </VerticalTimelineElement>
+
                         <VerticalTimelineElement
                             className="vertical-timeline-element--work"
-                            date="July 2017 - July 2019"
+                            date="August 2017 - July 2019"
                             iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
                         >
-                            <h3 className="vertical-timeline-element-title">Developer</h3>
+                            <h3 className="vertical-timeline-element-title">Graduate Developer</h3>
                             <h4 className="vertical-timeline-element-subtitle">CGI</h4>
                             <p>
-                                Doing some coding
+                                Responsible for an entire customer relationship type subsystem, using a variety of tools and software such as Java, SQL, JSP, Perl, Hibernate, VB, Remedy, Crystal Reports.
+
+                                Subsystem compromises of a workflow tool, an in-house website and a reporting tool.
+                            </p>
+                        </VerticalTimelineElement>
+
+                        <VerticalTimelineElement
+                            className="vertical-timeline-element--work"
+                            date="August 2015 - July 2016"
+                            iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+                        >
+                            <h3 className="vertical-timeline-element-title">Analyst Programmer</h3>
+                            <h4 className="vertical-timeline-element-subtitle">CGI</h4>
+                            <p>
+                                Working in the Defence Sector at CGI, as part of an industrial placement year for university.
+                            </p>
+                        </VerticalTimelineElement>
+
+                        <VerticalTimelineElement
+                            className="vertical-timeline-element--work"
+                            date="September 2014 - July 2015"
+                            iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+                        >
+                            <h3 className="vertical-timeline-element-title">Student Ambassador</h3>
+                            <h4 className="vertical-timeline-element-subtitle">Nottingham Trent University</h4>
+                            <p>
+                                Personally invited onto the Student Ambassador scheme due to high achievements from first year.
+                                Supported first year students in programming sessions and one on one mentoring sessions, as well as helping out and leading groups of potential students at   university open days.
                             </p>
                         </VerticalTimelineElement>
 
