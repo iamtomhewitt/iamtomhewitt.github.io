@@ -29,10 +29,15 @@ export default class Projects extends Component {
                             name: repo.name,
                             url: repo.html_url,
                             description: repo.description,
-                            language: repo.language
+                            language: repo.language,
+                            updatedAt: repo.updated_at
                         }
                     )
                 }
+                fetched_repos.sort(function (a, b) {
+                    var dateA = new Date(a.updatedAt), dateB = new Date(b.updatedAt);
+                    return dateB - dateA;
+                } );
                 that.setState({ repos: fetched_repos });
             });
     }
@@ -64,8 +69,8 @@ export default class Projects extends Component {
         if (this.state.repos.length > 0) {
             return (
                 <div className="Projects">
-                    <h1>Projects</h1>    
-                    {this.createGrid()}                
+                    <h1>Projects</h1>
+                    {this.createGrid()}
                 </div>
             );
         }

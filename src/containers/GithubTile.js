@@ -1,16 +1,25 @@
 import React from "react";
-import image from '../images/image.jpg';
+import defaultImage from '../images/github/default.jpg';
 import "./GithubTile.css";
 
-export function Tile(repos) {
-    return (
+export function Tile(repo) {
+    let imageToUse;
+
+    if (repo.image == null){
+        imageToUse = defaultImage
+    }
+    else {
+        // imageToUse = '../images/image.jpg';
+    }
+
+    return (    
         <div className="content">
             <a href="www.google.com" target="_blank">
                 <div className="content-overlay"></div>
-                <img className="content-image" alt="" src={image} />
+                <img className="content-image" alt="" src={imageToUse} />
                 <div className="content-details fadeIn-bottom">
-                    <h3 className="content-title">{repos.name}</h3>
-                    <p className="content-text">{repos.description}</p>
+                    <h3 className="content-title">{repo.name}</h3>
+                    <p className="content-text">{repo.description}</p>
                 </div>
             </a>
         </div>
