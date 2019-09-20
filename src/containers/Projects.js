@@ -37,25 +37,27 @@ export default class Projects extends Component {
             });
     }
 
-
     createGrid = () => {
-        let tiles = []
+        let grid = []
+        let githubTiles = []
         let rows = []
 
+        // First create tiles out of all the repos retrieved
         for (let i = 0; i < this.state.repos.length; i++) {
-            rows.push(<Tile key={i} {...this.state.repos[i]} />);
+            githubTiles.push(<Tile key={i} {...this.state.repos[i]} />);
         }
 
-        let groupsOfThree = []
-        while (rows.length > 0) {
-            groupsOfThree.push(rows.splice(0, 3));
+        // Split them into groups of three
+        while (githubTiles.length > 0) {
+            rows.push(githubTiles.splice(0, 3));
         }
 
-        for (let i = 0; i < groupsOfThree.length; i++) {
-            tiles.push(<div key={i} className="centered">{groupsOfThree[i]}</div>)
+        // Now create a div for the groups of three to sit in
+        for (let i = 0; i < rows.length; i++) {
+            grid.push(<div key={i} className="centered">{rows[i]}</div>)
         }
 
-        return tiles;
+        return grid;
     }
 
     render() {
