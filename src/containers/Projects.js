@@ -30,7 +30,8 @@ export default class Projects extends Component {
                             url: repo.html_url,
                             description: repo.description,
                             language: repo.language,
-                            updatedAt: repo.updated_at
+                            updatedAt: repo.updated_at,
+                            image: repo.name
                         }
                     )
                 }
