@@ -5,7 +5,7 @@ export function Tile(repo) {
 
     return (    
         <div className="content">
-            <a href="www.google.com" target="_blank">
+            <a href={repo.url} target="_blank">
                 <div className="content-overlay"/>
 
                 <img className="content-image" 
