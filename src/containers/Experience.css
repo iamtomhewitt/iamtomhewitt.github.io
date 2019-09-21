@@ -20,3 +20,11 @@
 .vertical-timeline-element-subtitle {
   font-family: "Open Sans", sans-serif;
 }
+
+.vertical-timeline-element-content p {
+  font-size: 14px;
+}
+
+.vertical-timeline--two-columns .vertical-timeline-element-content .vertical-timeline-element-date {
+  font-size: 12px;
+}
