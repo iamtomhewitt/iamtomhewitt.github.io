@@ -37,7 +37,7 @@ export default class Projects extends Component {
                 fetched_repos.sort(function (a, b) {
                     var dateA = new Date(a.updatedAt), dateB = new Date(b.updatedAt);
                     return dateB - dateA;
-                } );
+                });
                 that.setState({ repos: fetched_repos });
             });
     }
@@ -46,15 +46,16 @@ export default class Projects extends Component {
         let grid = []
         let githubTiles = []
         let rows = []
+        let itemsPerRow = 4 
 
         // First create tiles out of all the repos retrieved
         for (let i = 0; i < this.state.repos.length; i++) {
             githubTiles.push(<Tile key={i} {...this.state.repos[i]} />);
         }
 
-        // Split them into groups of three
+        // Split them into groups
         while (githubTiles.length > 0) {
-            rows.push(githubTiles.splice(0, 3));
+            rows.push(githubTiles.splice(0, itemsPerRow));
         }
 
         // Now create a div for the groups of three to sit in
@@ -69,7 +70,7 @@ export default class Projects extends Component {
         if (this.state.repos.length > 0) {
             return (
                 <div className="Projects">
-                    <h1>Projects</h1>
+                    <h1>I've built</h1>
                     {this.createGrid()}
                 </div>
             );
@@ -77,7 +78,7 @@ export default class Projects extends Component {
         else {
             return (
                 <div className="Projects">
-                    <h1>Projects</h1>
+                    <h1>I've built</h1>
                     <p>No repos found :-(</p>
                 </div>
             );

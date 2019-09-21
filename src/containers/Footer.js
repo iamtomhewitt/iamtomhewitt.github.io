@@ -5,6 +5,7 @@ export default class Footer extends Component {
     render() {
         return (
             <div align="center">
+                <hr/>
                 <br />
                 <p>
                     <SocialIcon url="http://github.com/iamtomhewitt" /><span>&nbsp;&nbsp;</span>
