@@ -5,6 +5,7 @@ import { Nav, Navbar, NavItem } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
 
 import "./App.css";
+import Footer from "./containers/Footer";
 
 class App extends Component {
   render() {
@@ -32,6 +33,7 @@ class App extends Component {
           </Navbar.Collapse>
         </Navbar>
         <Routes />
+        <Footer />
       </div>
     );
   }
