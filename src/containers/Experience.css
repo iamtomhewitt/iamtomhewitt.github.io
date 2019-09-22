@@ -13,6 +13,17 @@
   color: #999;
 }
 
+.icon {
+  width: 50px;
+  height: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* width: 50%; */
+  margin-top: 10%;
+  border-radius: 50%;
+}
+
 .vertical-timeline-element-title {
   font-family: "Open Sans", sans-serif;
 }
