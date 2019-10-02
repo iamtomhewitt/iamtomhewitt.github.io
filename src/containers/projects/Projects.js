@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Tile } from "./GithubTile";
+import { Tile } from "../github tile/GithubTile";
 
 import "./Projects.css";
 
