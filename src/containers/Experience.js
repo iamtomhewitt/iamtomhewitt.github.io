@@ -7,10 +7,10 @@ import "./Experience.css";
 export default class Experience extends Component {
     render() {
         var s = {
-            "background-color": "#F2F3F4"
+            "backgroundColor": "#F2F3F4"
         };
         return (
-            <div class="Experience">
+            <div className="Experience">
                 <div>
                     <h1 className="vertical-timeline-element-title">Where I've worked</h1>
                     <br></br>
@@ -21,7 +21,7 @@ export default class Experience extends Component {
                             className="vertical-timeline-element--work"
                             date="July 2019 - present"
                             iconStyle={{ background: '#fff', color: '#fff' }}
-                            icon={<img className="icon" src="http://www.whiterosecentre.com/wp-content/uploads/2013/09/william-hill-logo-square-500.png"/>}
+                            icon={<img className="icon" src="http://www.whiterosecentre.com/wp-content/uploads/2013/09/william-hill-logo-square-500.png" alt=""/>}
                         >
                             <h3 className="vertical-timeline-element-title">Developer</h3>
                             <h4 className="vertical-timeline-element-subtitle">William Hill</h4>
@@ -34,7 +34,7 @@ export default class Experience extends Component {
                             className="vertical-timeline-element--work"
                             date="August 2017 - July 2019"
                             iconStyle={{ background: '#fff', color: '#fff' }}
-                            icon={<img className="icon" src="https://upload.wikimedia.org/wikipedia/commons/3/32/CGI_logo.svg"/>}
+                            icon={<img className="icon" src="https://upload.wikimedia.org/wikipedia/commons/3/32/CGI_logo.svg" alt=""/>}
                         >
                             <h3 className="vertical-timeline-element-title">Graduate Developer</h3>
                             <h4 className="vertical-timeline-element-subtitle">CGI</h4>
@@ -49,7 +49,7 @@ export default class Experience extends Component {
                             className="vertical-timeline-element--work"
                             date="August 2015 - July 2016"
                             iconStyle={{ background: '#fff', color: '#fff' }}
-                            icon={<img className="icon" src="https://upload.wikimedia.org/wikipedia/commons/3/32/CGI_logo.svg"/>}
+                            icon={<img className="icon" src="https://upload.wikimedia.org/wikipedia/commons/3/32/CGI_logo.svg" alt=""/>}
                         >
                             <h3 className="vertical-timeline-element-title">Analyst Programmer</h3>
                             <h4 className="vertical-timeline-element-subtitle">CGI</h4>
@@ -62,7 +62,7 @@ export default class Experience extends Component {
                             className="vertical-timeline-element--work"
                             date="September 2014 - July 2015"
                             iconStyle={{ background: '#fff', color: '#fff' }}
-                            icon={<img className="icon" src="https://upload.wikimedia.org/wikipedia/en/b/bb/Nottingham_Trent_University_shield.svg"/>}
+                            icon={<img className="icon" src="https://upload.wikimedia.org/wikipedia/en/b/bb/Nottingham_Trent_University_shield.svg" alt=""/>}
                         >
                             <h3 className="vertical-timeline-element-title">Student Ambassador</h3>
                             <h4 className="vertical-timeline-element-subtitle">Nottingham Trent University</h4>
