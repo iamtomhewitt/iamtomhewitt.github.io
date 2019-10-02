@@ -8,7 +8,7 @@ export default class Home extends Component {
                 <div className="lander">
                     <h1>Hi, I'm Tom!</h1>
                     <div className="profile">
-                        <img src={process.env.PUBLIC_URL + '/images/Me.jpg'} />
+                        <img src={process.env.PUBLIC_URL + '/images/Me.jpg'} alt=""/>
                     </div>
                     <p />
                     <p>I'm currently a software developer at William Hill. I play drums, a few video games (as well as make my own on Google Play!). And love a bit of metal.</p>
