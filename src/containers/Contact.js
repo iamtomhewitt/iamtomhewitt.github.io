@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { FormGroup, FormControl, ControlLabel, Button } from "react-bootstrap";
+import * as emailjs from "emailjs-com"
 
 import "./Contact.css";
 
@@ -23,6 +24,15 @@ export default class Contact extends Component {
             this.state.message.length > 0);
     }
 
+    clearForm() {
+        this.setState({
+            firstName: "",
+            lastName: "",
+            email: "",
+            message: ""
+        });
+    }
+
     handleChange = event => {
         this.setState({
             [event.target.id]: event.target.value
@@ -31,6 +41,22 @@ export default class Contact extends Component {
 
     handleSubmit = event => {
         event.preventDefault();
+
+        let parameters = {
+            from_name: this.state.email,
+            to_name: "tommhewitt@gmail.com",
+            subject: "New Website Message from " + this.state.firstName + " " + this.state.lastName,
+            message_html: this.state.message
+        }
+
+        emailjs.send(
+            'gmail',
+            'template_bAqyBvgM',
+            parameters,
+            'user_D5T3rATIktVUiqjTa1fE0'
+        )
+
+        this.clearForm();
     }
 
     render() {
@@ -77,7 +103,8 @@ export default class Contact extends Component {
                         bsSize="large"
                         bsStyle="primary"
                         disabled={!this.validateForm()}
-                        type="submit">Send Message!</Button>
+                        type="submit">Send Message!
+                    </Button>
                 </form>
             </div>
         );
