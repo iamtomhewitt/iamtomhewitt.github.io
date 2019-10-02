@@ -5,11 +5,12 @@ export function Tile(repo) {
 
     return (    
         <div className="content">
-            <a href={repo.url} target="_blank">
+            <a href={repo.url} target="_blank" rel="noopener noreferrer">
                 <div className="content-overlay"/>
 
                 <img className="content-image" 
                     src={process.env.PUBLIC_URL + '/images/github/' + repo.name + '.png'} 
+                    alt=""
                     onError={(e)=>{e.target.onerror = null; e.target.src=process.env.PUBLIC_URL + '/images/github/default.jpg'}} 
                 />
 
