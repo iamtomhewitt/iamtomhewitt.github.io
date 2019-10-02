@@ -1,11 +1,11 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
-import Home from "./containers/Home";
-import PageNotFound from "./containers/PageNotFound";
-import Experience from "./containers/Experience";
-import Projects from "./containers/Projects";
-import Contact from "./containers/Contact";
-import PrivacyPolicyVRPacmac from "./containers/PrivacyPolicyVRPacmac";
+import Home from "./containers/home/Home";
+import PageNotFound from "./containers/page not found/PageNotFound";
+import Experience from "./containers/experience/Experience";
+import Projects from "./containers/projects/Projects";
+import Contact from "./containers/contact/Contact";
+import VRPacmac from "./containers/privacy policies/VRPacmac";
 
 export default () =>
   <Switch>
@@ -13,7 +13,7 @@ export default () =>
     <Route path="/experience" exact component={Experience} />
     <Route path="/projects" exact component={Projects} />
     <Route path="/contact" exact component={Contact} />
-    <Route path="/vr-pac-mac-privacy-policy" exact component={PrivacyPolicyVRPacmac} />
+    <Route path="/vr-pac-mac-privacy-policy" exact component={VRPacmac} />
 
     { /* Catch all unmatched routes */}
     <Route component={PageNotFound} />

@@ -1,10 +1,10 @@
 import React, { Component } from "react";
-import "./PrivacyPolicyVRPacmac.css";
+import "./VRPacmac.css";
 
-export default class PrivacyPolicyVRPacmac extends Component {
+export default class VRPacmac extends Component {
     render() {
         return (
-            <div className="PrivacyPolicyVRPacmac">
+            <div className="VRPacmac">
                 <div className="lander">
                     <h1>Privacy Policy VR Pacmac</h1>
                     <p>
