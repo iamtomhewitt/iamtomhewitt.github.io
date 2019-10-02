@@ -6,6 +6,8 @@ import Experience from "./containers/experience/Experience";
 import Projects from "./containers/projects/Projects";
 import Contact from "./containers/contact/Contact";
 import VRPacmac from "./containers/privacy policies/VRPacmac";
+import VRTurretDefence from "./containers/privacy policies/VRTurretDefence";
+import JetDashVR from "./containers/privacy policies/JetDashVR";
 
 export default () =>
   <Switch>
@@ -14,6 +16,8 @@ export default () =>
     <Route path="/projects" exact component={Projects} />
     <Route path="/contact" exact component={Contact} />
     <Route path="/vr-pac-mac-privacy-policy" exact component={VRPacmac} />
+    <Route path="/vr-turret-defence-privacy-policy" exact component={VRTurretDefence} />
+    <Route path="/jet-dash-vr-privacy-policy" exact component={JetDashVR} />
 
     { /* Catch all unmatched routes */}
     <Route component={PageNotFound} />
