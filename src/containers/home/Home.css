@@ -4,7 +4,6 @@
 }
 
 .Home .lander h1 {
-  font-family: "Open Sans", sans-serif;
   font-weight: 600;
 }
 
@@ -13,11 +12,6 @@
 }
 .profile img {
   border-radius: 50%;
-  border: 5px solid rgb(21, 205, 110);
-  border-right: 5px solid rgb(82, 159, 252);
-  border-bottom: 5px solid  rgb(82, 159, 252);;
-  border-left: 5px solid  rgb(2, 76, 167);
-  border-top: 5px solid  rgb(2, 76, 167);
   width: 200px;
   height: 200px;
 }
