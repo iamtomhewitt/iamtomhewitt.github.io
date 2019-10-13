@@ -13,7 +13,8 @@
     "react-scripts": "3.1.1",
     "react-timeline-scribble": "^1.0.14",
     "react-vertical-timeline-component": "^2.5.0",
-    "set-value": "^3.0.1"
+    "set-value": "^3.0.1",
+    "yarn": "^1.19.1"
   },
   "scripts": {
     "start": "react-scripts start",
