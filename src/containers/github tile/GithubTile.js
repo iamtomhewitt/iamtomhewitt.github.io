@@ -2,14 +2,14 @@ import React from "react";
 import "./GithubTile.css";
 
 export function Tile(repo) {
-
     return (    
         <div className="content">
             <a href={repo.url} target="_blank" rel="noopener noreferrer">
                 <div className="content-overlay"/>
-
-                <img className="content-image" 
-                    src={process.env.PUBLIC_URL + '/images/github/' + repo.name + '.png'} 
+				
+				<img className="content-image" 
+					style={{width:300, height: 166}}
+                    src={repo.imageSource} 
                     alt=""
                     onError={(e)=>{e.target.onerror = null; e.target.src=process.env.PUBLIC_URL + '/images/github/default.jpg'}} 
                 />
