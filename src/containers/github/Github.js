@@ -17,9 +17,8 @@ export default class Github extends Component {
 			.then(function (response) {
 				return response.json();
 			})
-			.then(function (jsonData) {
+			.then(function (data) {
 				var fetched_repos = []
-				var data = jsonData
 
 				for (var i = 0; i < data.length; i++) {
 					var repo = data[i];
@@ -29,15 +28,12 @@ export default class Github extends Component {
 							url: repo.html_url,
 							description: repo.description,
 							language: repo.language,
-							updatedAt: repo.updated_at,
-							imageSource: "https://raw.githubusercontent.com/iamtomhewitt/"+repo.name+"/master/github.png"
+							forks: repo.forks_count,
+							issues: repo.open_issues_count,
+							stars: repo.stargazers_count
 						}
 					)
 				}
-				fetched_repos.sort(function (a, b) {
-					var dateA = new Date(a.updatedAt), dateB = new Date(b.updatedAt);
-					return dateB - dateA;
-				});
 				that.setState({ repos: fetched_repos });
 			});
 	}
@@ -51,17 +47,23 @@ export default class Github extends Component {
 					<td>Name</td>
 					<td>Description</td>
 					<td>Language</td>
+					<td>Issues</td>
+					<td>Forks</td>
+					<td>Stars</td>
 				</tr>
 			</thead>
 		)
 
 		for (let i = 0; i < this.state.repos.length; i++) {
 			rows.push(
-					<tr>
-						<td style={{width:175}}>{this.state.repos[i].name}</td>
-						<td>{this.state.repos[i].description}</td>
-						<td>{this.state.repos[i].language}</td>
-					</tr>)
+				<tr>
+					<td style={{width:175}}>{this.state.repos[i].name}</td>
+					<td>{this.state.repos[i].description}</td>
+					<td>{this.state.repos[i].language}</td>
+					<td>{this.state.repos[i].issues}</td>
+					<td>{this.state.repos[i].forks}</td>
+					<td>{this.state.repos[i].stars}</td>
+				</tr>)
 		}
 		return rows;
 	}
