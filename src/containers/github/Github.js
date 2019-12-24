@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import { Tile } from "../github tile/GithubTile";
 
-import "./Projects.css";
+import "./Github.css";
 
-export default class Projects extends Component {
+export default class Github extends Component {
 
 	constructor() {
 		super();
@@ -70,7 +70,7 @@ export default class Projects extends Component {
 	render() {
 		if (this.state.repos.length > 0) {
 			return (
-				<div className="Projects">
+				<div className="Github">
 					<h1>I've built</h1>
                     {this.createGrid()}
                 </div>
@@ -78,7 +78,7 @@ export default class Projects extends Component {
         }
         else {
             return (
-                <div className="Projects">
+                <div className="Github">
                     <h1>I've built</h1>
 					<p>No repos found :-(</p>
 				</div>
