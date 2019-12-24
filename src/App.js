@@ -23,8 +23,8 @@ class App extends Component {
               <LinkContainer to="/experience">
                 <NavItem>Experience</NavItem>
               </LinkContainer>
-              <LinkContainer to="/projects">
-                <NavItem>Projects</NavItem>
+              <LinkContainer to="/github">
+                <NavItem>Github</NavItem>
               </LinkContainer>
               <LinkContainer to="/contact">
                 <NavItem>Contact</NavItem>
