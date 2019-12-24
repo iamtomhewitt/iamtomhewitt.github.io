@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { Tile } from "../github tile/GithubTile";
 
 import "./Github.css";
 
@@ -43,28 +42,28 @@ export default class Github extends Component {
 			});
 	}
 
-	createGrid = () => {
-		let grid = []
-		let githubTiles = []
+	createRows = () => {
 		let rows = []
-		let itemsPerRow = 4 
 
-		// First create tiles out of all the repos retrieved
+		rows.push(
+			<thead>
+				<tr>
+					<td>Name</td>
+					<td>Description</td>
+					<td>Language</td>
+				</tr>
+			</thead>
+		)
+
 		for (let i = 0; i < this.state.repos.length; i++) {
-			githubTiles.push(<Tile key={i} {...this.state.repos[i]} />);
+			rows.push(
+					<tr>
+						<td style={{width:175}}>{this.state.repos[i].name}</td>
+						<td>{this.state.repos[i].description}</td>
+						<td>{this.state.repos[i].language}</td>
+					</tr>)
 		}
-
-		// Split them into groups
-		while (githubTiles.length > 0) {
-			rows.push(githubTiles.splice(0, itemsPerRow));
-		}
-
-		// Now create a div for the groups to sit in
-		for (let i = 0; i < rows.length; i++) {
-			grid.push(<div key={i} className="centered">{rows[i]}</div>)
-		}
-
-		return grid;
+		return rows;
 	}
 
 	render() {
@@ -72,7 +71,9 @@ export default class Github extends Component {
 			return (
 				<div className="Github">
 					<h1>I've built</h1>
-                    {this.createGrid()}
+                    <table id="repos-table">
+						{this.createRows()}
+					</table>
                 </div>
             );
         }
