@@ -58,7 +58,7 @@ export default class Github extends Component {
 		for (let i = 0; i < this.state.repos.length; i++) {
 			rows.push(
 				<tr>
-					<td style={{width:175}}>{this.state.repos[i].name}</td>
+					<td style={{width:175}}><a href={this.state.repos[i].url}>{this.state.repos[i].name}</a></td>
 					<td style={{width:600}}>{this.state.repos[i].description}</td>
 					<td>{this.state.repos[i].language}</td>
 					<td>{this.state.repos[i].issues}</td>
