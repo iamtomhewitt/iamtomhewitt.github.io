@@ -34,6 +34,7 @@ export default class Github extends Component {
 						}
 					)
 				}
+
 				that.setState({ repos: fetched_repos });
 			});
 	}
@@ -58,7 +59,7 @@ export default class Github extends Component {
 			rows.push(
 				<tr>
 					<td style={{width:175}}>{this.state.repos[i].name}</td>
-					<td>{this.state.repos[i].description}</td>
+					<td style={{width:600}}>{this.state.repos[i].description}</td>
 					<td>{this.state.repos[i].language}</td>
 					<td>{this.state.repos[i].issues}</td>
 					<td>{this.state.repos[i].forks}</td>
