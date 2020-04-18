@@ -1,7 +1,7 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
 import Home from "./components/home/Home";
-import PageNotFound from "./components/page not found/PageNotFound";
+import PageNotFound from "./components/page-not-found/PageNotFound";
 import Experience from "./components/experience/Experience";
 import Github from "./components/github/Github";
 import Contact from "./components/contact/Contact";
