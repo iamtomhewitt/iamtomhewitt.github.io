@@ -1,8 +1,7 @@
-#container h1 {
+#title {
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
   text-align: center;
-  margin-bottom: 50px;
 }
 
 #container p {
@@ -12,8 +11,4 @@
 #container form {
   margin: 0 auto;
   max-width: 320px;
-}
-
-#container form textarea {
-  height: 300px;
 }
