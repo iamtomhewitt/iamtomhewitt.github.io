@@ -7,7 +7,7 @@ export default class Navigation extends Component {
 		return (
 			<>
 				<Navbar bg="primary" variant="dark">
-					<Navbar.Brand href="/">Home</Navbar.Brand>
+					<Navbar.Brand href="#/">Home</Navbar.Brand>
 					<Nav className="mr-auto">
 						<Nav.Link href="#/experience">Experience</Nav.Link>
 						<Nav.Link href="#/github">Github</Nav.Link>
