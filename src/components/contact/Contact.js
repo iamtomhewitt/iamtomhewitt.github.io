@@ -61,7 +61,7 @@ export default class Contact extends Component {
 
     render() {
         return (
-            <div className="Contact">
+            <div id="container">
                 <h1>Contact</h1>
                 <form onSubmit={this.handleSubmit}>
                     <FormGroup controlId="firstName">
