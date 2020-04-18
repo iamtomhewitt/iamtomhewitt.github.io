@@ -1,25 +1,23 @@
 {
   "files": {
-    "main.css": "/website/static/css/main.36e32864.chunk.css",
-    "main.js": "/website/static/js/main.b52ab990.chunk.js",
-    "main.js.map": "/website/static/js/main.b52ab990.chunk.js.map",
-    "runtime-main.js": "/website/static/js/runtime-main.dc7f3628.js",
-    "runtime-main.js.map": "/website/static/js/runtime-main.dc7f3628.js.map",
-    "static/css/2.a641e29a.chunk.css": "/website/static/css/2.a641e29a.chunk.css",
-    "static/js/2.f4422e0d.chunk.js": "/website/static/js/2.f4422e0d.chunk.js",
-    "static/js/2.f4422e0d.chunk.js.map": "/website/static/js/2.f4422e0d.chunk.js.map",
+    "main.css": "/website/static/css/main.6108f3d2.chunk.css",
+    "main.js": "/website/static/js/main.17aebc80.chunk.js",
+    "main.js.map": "/website/static/js/main.17aebc80.chunk.js.map",
+    "runtime-main.js": "/website/static/js/runtime-main.4647f35b.js",
+    "runtime-main.js.map": "/website/static/js/runtime-main.4647f35b.js.map",
+    "static/js/2.38391162.chunk.js": "/website/static/js/2.38391162.chunk.js",
+    "static/js/2.38391162.chunk.js.map": "/website/static/js/2.38391162.chunk.js.map",
     "index.html": "/website/index.html",
-    "precache-manifest.b35929117c5b2161abf07f809a283347.js": "/website/precache-manifest.b35929117c5b2161abf07f809a283347.js",
+    "precache-manifest.010ff6bc8e37c0aa2ab7fa2a30056e69.js": "/website/precache-manifest.010ff6bc8e37c0aa2ab7fa2a30056e69.js",
     "service-worker.js": "/website/service-worker.js",
-    "static/css/2.a641e29a.chunk.css.map": "/website/static/css/2.a641e29a.chunk.css.map",
-    "static/css/main.36e32864.chunk.css.map": "/website/static/css/main.36e32864.chunk.css.map",
-    "static/js/2.f4422e0d.chunk.js.LICENSE": "/website/static/js/2.f4422e0d.chunk.js.LICENSE"
+    "static/css/main.6108f3d2.chunk.css.map": "/website/static/css/main.6108f3d2.chunk.css.map",
+    "static/js/2.38391162.chunk.js.LICENSE.txt": "/website/static/js/2.38391162.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/website/static/media/OpenSans-Regular.d7d5d458.ttf"
   },
   "entrypoints": [
-    "static/js/runtime-main.dc7f3628.js",
-    "static/css/2.a641e29a.chunk.css",
-    "static/js/2.f4422e0d.chunk.js",
-    "static/css/main.36e32864.chunk.css",
-    "static/js/main.b52ab990.chunk.js"
+    "static/js/runtime-main.4647f35b.js",
+    "static/js/2.38391162.chunk.js",
+    "static/css/main.6108f3d2.chunk.css",
+    "static/js/main.17aebc80.chunk.js"
   ]
 }
