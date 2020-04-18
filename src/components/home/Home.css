@@ -1,17 +1,16 @@
-.Home .lander {
+#lander {
   padding: 40px 0;
   text-align: center;
 }
 
-.Home .lander h1 {
+#lander h1 {
   font-weight: 600;
 }
 
-.Home .lander p {
-  color: #999;
-}
-.profile img {
+#profile img {
   border-radius: 50%;
   width: 200px;
   height: 200px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }

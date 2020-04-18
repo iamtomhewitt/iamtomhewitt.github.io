@@ -1,15 +1,14 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Product Sans", sans-serif;
+  font-family: "OpenSans", sans-serif;
   font-size: 16px;
-  color: #333;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Product Sans", sans-serif;
+  font-family: "OpenSans", sans-serif;
 }
 
 select.form-control, textarea.form-control, input.form-control {
@@ -24,15 +23,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
-/* override bootstrap navbar colors */
-.navbar, .navbar-default {
-  background-image: linear-gradient(to bottom, #3b3b3b 0, #3b3b3b 100%) !important;
-}
-
-.navbar-default .navbar-brand {
-  color: rgb(255, 255, 255);
-}
-
-.navbar-default .navbar-nav>li>a {
-  color: rgb(255, 255, 255);
+@font-face {
+	font-family: 'OpenSans';
+	src: local('OpenSans'), url(./fonts/OpenSans/OpenSans-Regular.ttf) format('truetype');
 }

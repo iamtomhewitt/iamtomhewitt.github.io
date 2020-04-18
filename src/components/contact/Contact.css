@@ -1,19 +1,14 @@
-.Contact h1 {
+#title {
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
   text-align: center;
-  margin-bottom: 50px;
 }
 
-.Contact p {
+#container p {
   color: #999;
 }
 
-.Contact form {
+#container form {
   margin: 0 auto;
   max-width: 320px;
-}
-
-.Contact form textarea {
-  height: 300px;
 }
