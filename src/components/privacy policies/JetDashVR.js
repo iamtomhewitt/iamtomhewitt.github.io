@@ -4,7 +4,7 @@ import "./PrivacyPolicy.css";
 export default class JetDashVR extends Component {
     render() {
         return (
-            <div className="PrivacyPolicy">
+            <div id="privacyPolicy">
                 <h1>Jet Dash VR Privacy Policy</h1>
                 <p>
                     Tom Hewitt built the Jet Dash VR app as an Ad Supported app. This SERVICE is provided by Tom Hewitt at no cost and is intended for use as is.

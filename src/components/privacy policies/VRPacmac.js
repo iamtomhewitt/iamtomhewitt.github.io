@@ -4,7 +4,7 @@ import "./PrivacyPolicy.css";
 export default class VRPacmac extends Component {
     render() {
         return (
-            <div className="PrivacyPolicy">
+            <div id="privacyPolicy">
                 <h1>VR Pacmac Privacy Policy</h1>
                 <p>
                     Tom Hewitt built the VR Pac-mac app as a Free app. This SERVICE is provided by Tom Hewitt at no cost and is intended for use as is.
