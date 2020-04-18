@@ -3,3 +3,9 @@
 	flex-wrap: wrap;
 	margin: 25px 200px;
 }
+
+#title {
+	text-align: center;
+	font-weight: bold;
+	margin-top: 15px;
+}
