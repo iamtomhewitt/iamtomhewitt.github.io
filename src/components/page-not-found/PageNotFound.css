@@ -1,5 +1,5 @@
-.PageNotFound {
-    padding-top: 100px;
-    text-align: center;
-  }
-  
+#pageNotFound {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	text-align: center;
+}
