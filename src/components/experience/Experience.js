@@ -12,7 +12,7 @@ export default class Experience extends Component {
 					<Tile
 						jobTitle="Developer"
 						company="William Hill"
-						description="Working in the Retail Tech department, on a Retail Operational Excellence project. Currently working on betting terminal fixes and in house dashboards for other projects."
+						description="Working in Retail, currently working on the software for self service betting terminals."
 						time="Jul 2019 - Present"
 						fontSize="16"
 					/>
