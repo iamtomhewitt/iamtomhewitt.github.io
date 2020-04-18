@@ -58,8 +58,8 @@ export default class Github extends Component {
 		for (let i = 0; i < this.state.repos.length; i++) {
 			rows.push(
 				<tr>
-					<td style={{width:175}}><a href={this.state.repos[i].url}>{this.state.repos[i].name}</a></td>
-					<td style={{width:600}}>{this.state.repos[i].description}</td>
+					<td style={{ width: 175 }}><a href={this.state.repos[i].url}>{this.state.repos[i].name}</a></td>
+					<td style={{ width: 600 }}>{this.state.repos[i].description}</td>
 					<td>{this.state.repos[i].language}</td>
 					<td>{this.state.repos[i].issues}</td>
 					<td>{this.state.repos[i].forks}</td>
@@ -72,18 +72,18 @@ export default class Github extends Component {
 	render() {
 		if (this.state.repos.length > 0) {
 			return (
-				<div className="Github">
+				<div id="githubContainer">
 					<h1>I've built</h1>
-                    <table id="repos-table">
+					<table id="repos-table">
 						{this.createRows()}
 					</table>
-                </div>
-            );
-        }
-        else {
-            return (
-                <div className="Github">
-                    <h1>I've built</h1>
+				</div>
+			);
+		}
+		else {
+			return (
+				<div id="githubContainer">
+					<h1>I've built</h1>
 					<p>No repos found :-(</p>
 				</div>
 			);

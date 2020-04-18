@@ -1,15 +1,15 @@
-.Github {
+#githubContainer {
   padding: 10px 0;
   text-align: center;
   font-size: 18px;
 }
 
-.Github h1 {
+#githubContainer h1 {
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
 }
 
-.Github p {
+#githubContainer p {
   color: #999;
 }
 
@@ -17,7 +17,8 @@
   text-align: center;
   border-collapse: collapse;
   border: 3px solid #ddd;
-  width: 100%;
+  width: 90%;
+  margin: auto;
 }
 
 #repos-table td, #repos-table th {
