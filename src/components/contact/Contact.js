@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { FormGroup, FormControl, ControlLabel, Button } from "react-bootstrap";
+import { FormGroup, FormControl, FormLabel, Button } from "react-bootstrap";
 import * as emailjs from "emailjs-com"
 
 import "./Contact.css";
@@ -65,7 +65,7 @@ export default class Contact extends Component {
                 <h1>Contact</h1>
                 <form onSubmit={this.handleSubmit}>
                     <FormGroup controlId="firstName">
-                        <ControlLabel>First Name*</ControlLabel>
+                        <FormLabel>First Name*</FormLabel>
                         <FormControl
                             type="text"
                             value={this.state.firstName}
@@ -73,7 +73,7 @@ export default class Contact extends Component {
                         />
                     </FormGroup>
                     <FormGroup controlId="lastName">
-                        <ControlLabel>Last Name*</ControlLabel>
+                        <FormLabel>Last Name*</FormLabel>
                         <FormControl
                             type="text"
                             value={this.state.lastName}
@@ -81,7 +81,7 @@ export default class Contact extends Component {
                         />
                     </FormGroup>
                     <FormGroup controlId="email">
-                        <ControlLabel>Email*</ControlLabel>
+                        <FormLabel>Email*</FormLabel>
                         <FormControl
                             type="email"
                             value={this.state.email}
@@ -89,7 +89,7 @@ export default class Contact extends Component {
                         />
                     </FormGroup>
                     <FormGroup controlId="message">
-                        <ControlLabel>Message*</ControlLabel>
+                        <FormLabel>Message*</FormLabel>
                         <FormControl
                             autoFocus
                             componentClass="textarea"
