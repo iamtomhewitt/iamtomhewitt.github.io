@@ -23,16 +23,3 @@ input[type=file] {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
-
-/* override bootstrap navbar colors */
-.navbar, .navbar-default {
-  background-image: linear-gradient(to bottom, #3b3b3b 0, #3b3b3b 100%) !important;
-}
-
-.navbar-default .navbar-brand {
-  color: rgb(255, 255, 255);
-}
-
-.navbar-default .navbar-nav>li>a {
-  color: rgb(255, 255, 255);
-}
