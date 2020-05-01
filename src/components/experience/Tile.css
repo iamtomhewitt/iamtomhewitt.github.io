@@ -15,7 +15,7 @@
 
 #jobTitle {
 	font-weight: bold;
-	font-size: 32px;
+	font-size: 30px;
 }
 
 #company {
@@ -25,4 +25,26 @@
 
 #description {
 	margin-top: 10px;
+}
+
+#quickInfo {
+	display: flex;
+	margin: auto;
+}
+
+#details {
+	float: left;
+}
+
+#image {
+	float: right;
+	margin-top: 5px;
+	margin-right: 5px;
+	margin-bottom: auto;
+	margin-left: auto;
+}
+
+#image img {
+	width: 60px;
+	height: 60px;
 }
