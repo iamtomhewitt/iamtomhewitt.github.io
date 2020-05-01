@@ -13,7 +13,7 @@ export default class GithubTile extends React.Component {
 		return (
 			<div className="repo">
 				<div>
-					<div className="name"><a href={url}>{name}</a></div>
+					<div className="name"><a href={url} target="_blank" rel="noopener noreferrer">{name}</a></div>
 					<div className="language">{language}</div>
 				</div>
 				<ul className="stats" key={name}>
