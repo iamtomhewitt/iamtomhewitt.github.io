@@ -16,7 +16,7 @@ export default class Tile extends React.Component {
 						<div id="time">{this.props.time}</div>
 					</div>
 					<div id="image">
-						<img src={this.props.logo}></img>
+						<img src={this.props.logo} alt="img"></img>
 					</div>
 				</div>
 				<div id="description" style={fontSize}>{this.props.description}</div>
