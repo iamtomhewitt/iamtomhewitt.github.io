@@ -8,15 +8,20 @@ export default class GithubTile extends React.Component {
 			fontSize: this.props.fontSize + 'px'
 		};
 
-		const { name, language, description } = this.props;
+		const { name, language, description, bugs, stars, forks } = this.props;
 
 		return (
-			<div id="repo">
-				<div id="repoInfo">
-					<div id="repoName">{name}</div>
-					<div id="repoLanguage">{language}</div>
+			<div className="repo">
+				<div className="repoInfo">
+					<div className="repoName">{name}</div>
+					<div className="repoLanguage">{language}</div>
 				</div>
-				<div id="description" style={fontSize}>{description}</div>
+				<div className="description" style={fontSize}>{description}</div>
+				<ul className="stats" key={name}>
+					<li><span role="img" aria-label="bug">🐛</span>{bugs}</li>
+					<li><span role="img" aria-label="star">⭐️</span>{stars}</li>
+					<li><span role="img" aria-label="fork and knife">🍴</span>{forks}</li>
+				</ul>
 			</div>
 		)
 	}
