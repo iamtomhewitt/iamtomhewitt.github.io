@@ -42,21 +42,23 @@ export default class Github extends Component {
 	render() {
 		if (this.state.repos.length > 0) {
 			return (
-				<div id="githubContainer">
+				<div>
 					<h1>I've built</h1>
 
-					{this.state.repos.map((repo) => {
-						return <GithubTile
-							name={repo.name}
-							language={repo.language}
-							description={repo.description}
-							bugs={repo.issues}
-							stars={repo.stars}
-							forks={repo.forks}
-							url={repo.url}
-							fontSize="14"
-						/>
-					})};
+					<div className="reposContainer">
+						{this.state.repos.map((repo) => {
+							return <GithubTile
+								name={repo.name}
+								language={repo.language}
+								description={repo.description}
+								bugs={repo.issues}
+								stars={repo.stars}
+								forks={repo.forks}
+								url={repo.url}
+								fontSize="14"
+							/>
+						})};
+					</div>
 				</div>
 			);
 		}
@@ -64,7 +66,7 @@ export default class Github extends Component {
 			return (
 				<div id="githubContainer">
 					<h1>I've built</h1>
-					<p>No repos found :-(</p>
+					<p>No repos found <span role="img" aria-label="crying face">😢</span></p>
 				</div>
 			);
 		}
