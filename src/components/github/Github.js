@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import GithubTile from './GithubTile';
 import "./Github.css";
 
 export default class Github extends Component {
@@ -39,44 +39,24 @@ export default class Github extends Component {
 			});
 	}
 
-	createRows = () => {
-		let rows = []
-
-		rows.push(
-			<thead>
-				<tr>
-					<td>Name</td>
-					<td>Description</td>
-					<td>Language</td>
-					<td>Issues</td>
-					<td>Forks</td>
-					<td>Stars</td>
-				</tr>
-			</thead>
-		)
-
-		for (let i = 0; i < this.state.repos.length; i++) {
-			rows.push(
-				<tr>
-					<td style={{ width: 175 }}><a href={this.state.repos[i].url}>{this.state.repos[i].name}</a></td>
-					<td style={{ width: 600 }}>{this.state.repos[i].description}</td>
-					<td>{this.state.repos[i].language}</td>
-					<td>{this.state.repos[i].issues}</td>
-					<td>{this.state.repos[i].forks}</td>
-					<td>{this.state.repos[i].stars}</td>
-				</tr>)
-		}
-		return rows;
-	}
-
 	render() {
 		if (this.state.repos.length > 0) {
 			return (
 				<div id="githubContainer">
 					<h1>I've built</h1>
-					<table id="repos-table">
-						{this.createRows()}
-					</table>
+
+					{this.state.repos.map((repo) => {
+						return <GithubTile
+							name={repo.name}
+							language={repo.language}
+							description={repo.description}
+							bugs={repo.issues}
+							stars={repo.stars}
+							forks={repo.forks}
+							url={repo.url}
+							fontSize="14"
+						/>
+					})};
 				</div>
 			);
 		}
