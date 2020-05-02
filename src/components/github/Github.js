@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import GithubTile from './GithubTile';
+
 import "./Github.css";
 
 export default class Github extends Component {
@@ -12,31 +13,9 @@ export default class Github extends Component {
 	}
 
 	componentDidMount() {
-		const that = this;
 		fetch("https://api.github.com/users/iamtomhewitt/repos")
-			.then(function (response) {
-				return response.json();
-			})
-			.then(function (data) {
-				var fetched_repos = []
-
-				for (var i = 0; i < data.length; i++) {
-					var repo = data[i];
-					fetched_repos.push(
-						{
-							name: repo.name,
-							url: repo.html_url,
-							description: repo.description,
-							language: repo.language,
-							forks: repo.forks_count,
-							issues: repo.open_issues_count,
-							stars: repo.stargazers_count
-						}
-					)
-				}
-
-				that.setState({ repos: fetched_repos });
-			});
+			.then(response => response.json())
+			.then(data => this.setState({ repos: data }));
 	}
 
 	render() {
@@ -48,11 +27,12 @@ export default class Github extends Component {
 					<div className="reposContainer">
 						{this.state.repos.map((repo) => {
 							return <GithubTile
+								key={repo.name}
 								name={repo.name}
 								language={repo.language}
 								description={repo.description}
-								bugs={repo.issues}
-								stars={repo.stars}
+								bugs={repo.open_issues}
+								stars={repo.stargazers_count}
 								forks={repo.forks}
 								url={repo.url}
 							/>
