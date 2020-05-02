@@ -55,7 +55,6 @@ export default class Github extends Component {
 								stars={repo.stars}
 								forks={repo.forks}
 								url={repo.url}
-								fontSize="14"
 							/>
 						})};
 					</div>
