@@ -8,25 +8,24 @@
 	width: 400px;
 	min-width: 400px;
 	max-width: 400px;
-	min-height: 250px;
-	max-height: 250px;
+	min-height: 220px;
+	max-height: 220px;
 	padding: 10px;
 }
 
 .name {
 	font-weight: bold;
-	font-size: 28px;
+	font-size: 20px;
 }
 
 .language {
 	font-weight: bold;
-	font-size: 18px;
+	font-size: 16px;
 	margin-bottom: 5px;
 }
 
 .description {
 	margin-top: 10px;
-	font-size: 14px;
 }
 
 .stats {
@@ -40,4 +39,5 @@
 	margin-left: 10px;
 	margin-right: 10px;
 	list-style: none;
+	font-size: 20px;
 }
