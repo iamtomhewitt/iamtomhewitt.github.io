@@ -56,14 +56,14 @@ export default class Github extends Component {
 								forks={repo.forks}
 								url={repo.url}
 							/>
-						})};
+						})}
 					</div>
 				</div>
 			);
 		}
 		else {
 			return (
-				<div id="githubContainer">
+				<div className="noRepos">
 					<h1>I've built</h1>
 					<p>No repos found <span role="img" aria-label="crying face">😢</span></p>
 				</div>
