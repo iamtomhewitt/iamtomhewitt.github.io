@@ -22,9 +22,9 @@ export default class GithubTile extends React.Component {
 					<Textfit
 						mode="multi"
 						forceSingleModeWidth={false}
-						throttle="50"
+						throttle={50}
 						style={{ height: 85 }}
-						max="20"
+						max={20}
 					>
 						{description}
 					</Textfit>
