@@ -1,26 +1,23 @@
 {
   "files": {
-    "main.css": "/website/static/css/main.2085afd2.chunk.css",
-    "main.js": "/website/static/js/main.a5ae3765.chunk.js",
-    "main.js.map": "/website/static/js/main.a5ae3765.chunk.js.map",
-    "runtime-main.js": "/website/static/js/runtime-main.1c8d7277.js",
-    "runtime-main.js.map": "/website/static/js/runtime-main.1c8d7277.js.map",
-    "static/js/2.04339423.chunk.js": "/website/static/js/2.04339423.chunk.js",
-    "static/js/2.04339423.chunk.js.map": "/website/static/js/2.04339423.chunk.js.map",
+    "main.css": "/website/static/css/main.6be1a3f3.chunk.css",
+    "main.js": "/website/static/js/main.e670f83a.chunk.js",
+    "main.js.map": "/website/static/js/main.e670f83a.chunk.js.map",
+    "runtime-main.js": "/website/static/js/runtime-main.9b825fe6.js",
+    "runtime-main.js.map": "/website/static/js/runtime-main.9b825fe6.js.map",
+    "static/js/2.c80fb98b.chunk.js": "/website/static/js/2.c80fb98b.chunk.js",
+    "static/js/2.c80fb98b.chunk.js.map": "/website/static/js/2.c80fb98b.chunk.js.map",
     "index.html": "/website/index.html",
-    "precache-manifest.60e1fb9c9a9a9979271957d53c7bccef.js": "/website/precache-manifest.60e1fb9c9a9a9979271957d53c7bccef.js",
+    "precache-manifest.b414778a87aace4f31d104a8d0e82400.js": "/website/precache-manifest.b414778a87aace4f31d104a8d0e82400.js",
     "service-worker.js": "/website/service-worker.js",
-    "static/css/main.2085afd2.chunk.css.map": "/website/static/css/main.2085afd2.chunk.css.map",
-    "static/js/2.04339423.chunk.js.LICENSE.txt": "/website/static/js/2.04339423.chunk.js.LICENSE.txt",
-    "static/media/index.css": "/website/static/media/OpenSans-Regular.d7d5d458.ttf",
-    "static/media/home-icon.png": "/website/static/media/home-icon.4ff6dbbd.png",
-    "static/media/ntu.png": "/website/static/media/ntu.aa5f47cd.png",
-    "static/media/william-hill.png": "/website/static/media/william-hill.3e7655b3.png"
+    "static/css/main.6be1a3f3.chunk.css.map": "/website/static/css/main.6be1a3f3.chunk.css.map",
+    "static/js/2.c80fb98b.chunk.js.LICENSE.txt": "/website/static/js/2.c80fb98b.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/website/static/media/BloggerSans.4a65919c.ttf"
   },
   "entrypoints": [
-    "static/js/runtime-main.1c8d7277.js",
-    "static/js/2.04339423.chunk.js",
-    "static/css/main.2085afd2.chunk.css",
-    "static/js/main.a5ae3765.chunk.js"
+    "static/js/runtime-main.9b825fe6.js",
+    "static/js/2.c80fb98b.chunk.js",
+    "static/css/main.6be1a3f3.chunk.css",
+    "static/js/main.e670f83a.chunk.js"
   ]
 }
